@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+body{
+  font-family: "Inter", sans-serif;
+  background: rgb(0, 0, 0);
+}
+*{
+  margin: 0;
+}
+.container{
+  max-width: 90%;
+  margin: 3rem auto;
+}
+
+/* navbar styles */
+header{
+  background: linear-gradient(180.00deg, rgb(17, 17, 17),rgba(119, 119, 119, 0) 100%);
+}
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navitems{
+  display: flex;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  align-items: center;
+  height: 36px;
+  border-radius: 39px;
+  gap: 40px;
+  padding: 5px;
+  margin: 0;
+}
+.navbar h3{
+  color: rgb(230, 83, 60);
+  font-size: 2.25rem;
+  font-weight: 800;
+}
+.navitems li{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.navlink{
+  text-decoration: none;
+  padding: 5px;
+  margin: 0;
+}
+.icon{
+  display: none;
+}
+#home{
+  border-radius: 46px;
+  background: rgb(230, 83, 60);
+  color: rgb(255, 255, 255);
+  padding: 8px 20px;
+  font-size: 1rem;
+  font-weight: 600;
+  height: 38px;
+}
+#service,
+#contact,
+#about{
+  color: rgb(255, 255, 255);
+  font-size: 1rem;
+  font-weight: 400;
+  margin: 12px;
+}
+/* banner part starts here */
+.banner{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.banner-heading{
+  color: rgb(255, 255, 255);
+  font-family: Inter;
+  font-size: 4.5rem;
+  font-weight: 900;
+  line-height: 120%;
+}
+.span-heading{
+  font-family: Miama;
+  font-size: 4.5rem;
+  font-weight: 400;
+  font-style: italic;
+}
+.banner-title{
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 1rem;
+  font-weight: 400;
+  text-align: left;
+  margin-top: 28px;
+}
+.banner-child{
+  max-width: 50%;
+}
+.btn-container{
+  margin-top: 28px;
+}
+.btn-primary{
+  border: none;
+  border-radius: 42px;
+  background: rgb(230, 83, 60);
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  font-weight: 600;
+  padding: 16px 40px;
+}
+.btn-secondary{
+  background: none;
+  border: 1px solid  rgb(255, 255, 255);
+  border-radius: 42px;
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  font-weight: 600;
+  padding: 16px 40px;
+  margin-left: 14px;
+}
+#child-2{
+  position: relative;
+}
+.card-one{
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  backdrop-filter: blur(20px);
+  background: rgba(48, 48, 48, 0.54);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 206px;
+  height: 96px;
+  position: absolute;
+  top: 420px;
+  right: 250px; 
+}
+.card-two{ 
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  backdrop-filter: blur(20px);
+  background: rgba(255, 255, 255, 0.1);
+  width: 193px;
+  height: 98px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 115px;
+  left: 200px;
+}
+.icon-container{
+  color: rgba(230, 83, 60, 1);
+  display: flex;
+  align-items: center;
+}
+.icon-container i{
+ font-size: 20px;
+}
+
+.one{
+  color: rgb(250, 250, 249);
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+.two{
+  color: rgba(239, 237, 232, 0.65);
+  font-size: 16px;
+  font-weight: 400;
+}
+.two-one{
+  color: rgb(255, 255, 255);
+  font-size: 40px;
+  font-weight: 900;
+}
+.two-two{
+  color: rgba(255, 255, 255, 0.65);
+  font-size: 13px;
+  font-weight: 400;
+}
+
+
+
+
+
+
+
+/* responsive part */
+
+
+@media screen and (max-width:576px) {
+  .container{
+    margin: 1rem 20px;
+  }
+  .banner{
+    flex-direction: column;
+  }
+  /* navbar styles */
+  .navitems{
+    display: none;
+  }
+  .icon{
+    display: block;
+    color: rgb(255, 255, 255);
+    font-size: 1.5rem;
+  }
+  /* banner styles */
+  .banner-child{
+    max-width: 100%;
+  }
+  .banner-heading{
+    font-size: 2.25rem;
+  }
+  .span-heading{
+    font-size: 2.25rem;
+  }
+  .btn-primary,.btn-secondary{
+    font-size: 14px;
+    padding: 14px;
+  }
+  .card-one{
+    width: 155px;
+    height: 72px;
+    top: 270px;
+    right: 130px;
+  }
+  .card-two{
+    top: 48px;
+    left: 182px;
+    width: 140px;
+    height: 74px;
+  }
+  .one{
+    font-size: 18px;
+  }
+  .two{
+    font-size: 12px;
+  }
+  .two-one{
+    font-size: 1.5rem;
+  }
+  .two-two{
+    font-size: 10px;
+  }
+}
