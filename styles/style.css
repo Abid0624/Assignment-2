@@ -34,6 +34,7 @@ header{
   color: rgb(230, 83, 60);
   font-size: 2.25rem;
   font-weight: 800;
+  font-style: italic;
 }
 .navitems li{
   list-style: none;
@@ -119,6 +120,9 @@ header{
 #child-2{
   position: relative;
 }
+#child-2 img{
+  object-fit: cover;
+}
 .card-one{
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 12px;
@@ -131,8 +135,8 @@ header{
   width: 206px;
   height: 96px;
   position: absolute;
-  top: 420px;
-  right: 250px; 
+  top: 72%;
+  right: 70%; 
 }
 .card-two{ 
   border: 1px solid rgba(255, 255, 255, 0.1);
@@ -146,13 +150,15 @@ header{
   justify-content: center;
   align-items: center;
   position: absolute;
-  top: 115px;
-  left: 200px;
+  top: 20%;
+  left: 58%;
 }
 .icon-container{
   color: rgba(230, 83, 60, 1);
+  background: white;
   display: flex;
   align-items: center;
+  border-radius: 50%;
 }
 .icon-container i{
  font-size: 20px;
@@ -170,7 +176,7 @@ header{
 }
 .two-one{
   color: rgb(255, 255, 255);
-  font-size: 40px;
+  font-size: 2rem;
   font-weight: 900;
 }
 .two-two{
@@ -179,9 +185,53 @@ header{
   font-weight: 400;
 }
 
+/* habit section */
 
+.habit-title{
+  color: rgb(255, 255, 255);
+  font-size: 3rem;
+  font-weight: 900;
+  text-align: center;
+}
+.habit-para{
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 14px;
+}
 
-
+.image-heading{
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+  
+}
+.card-para{
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 14px;
+  text-align: center;
+}
+.image{
+  border-radius: 50%;
+}
+.image-container{
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  margin-top: 50px;
+}
+.image-card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.image-card-details{
+  margin-top: 30px;
+}
 
 
 
@@ -192,7 +242,8 @@ header{
   .container{
     margin: 1rem 20px;
   }
-  .banner{
+  .banner,
+  .image-container{
     flex-direction: column;
   }
   /* navbar styles */
@@ -221,14 +272,15 @@ header{
   .card-one{
     width: 155px;
     height: 72px;
-    top: 270px;
-    right: 130px;
+    top: 45%;
+    right: 45%;
   }
   .card-two{
-    top: 48px;
-    left: 182px;
     width: 140px;
     height: 74px;
+    top: 48px;
+    left: 182px;
+   
   }
   .one{
     font-size: 18px;
@@ -241,5 +293,9 @@ header{
   }
   .two-two{
     font-size: 10px;
+  }
+  /* habits section */
+  .habit-title{
+    font-size: 2rem;
   }
 }
