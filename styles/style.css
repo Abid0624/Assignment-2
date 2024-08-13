@@ -277,13 +277,177 @@ margin-top: 10px;
   height: 100%;
   border-radius: 18px;
   object-fit: none;
-  object-position: 66% 32%;
-  
+  object-position: 66% 31%;
 } 
 .second-button{
   margin-bottom: 10px;
 }
 
+/* calculator part */
+
+.calculator{
+  background-color: rgb(34, 34, 34);
+  min-height: 400px;
+  padding: 52px 0;
+}
+.calculator-heading{
+  color: rgb(255, 255, 255);
+  font-size: 48px;
+  font-weight: 900;
+  text-align: left;
+  margin-bottom: 14px;
+}
+.calculator-para{
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 14px;
+  font-weight: 400;
+  text-align: left;
+}
+.bmi-heading{
+  margin: 5rem 300px;
+}
+.calculator-container{
+  min-height: 200px;
+  display: flex;
+  justify-content: space-between;
+}
+.calculator-chart{
+  max-width: 35%;
+}
+.calculator-input{
+  max-width: 60%;
+}
+.calculator-chart h4,
+.calculator-input h4{
+  color: rgb(255, 255, 255);
+  font-size: 28px;
+  font-weight: 900;
+  text-align: left;
+}
+th,td{
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 15px 18px;
+  text-align: left;
+}
+table{
+  border-collapse: collapse;
+  margin-top: 52px;
+}
+th{
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  font-weight: 500;
+}
+td{
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 14px;
+  font-weight: 400;
+}
+.bmi-calculator-para{
+  margin-top: 14px;
+}
+.form-container{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 34px;
+  gap: 14px;
+}
+.form-field{
+  width: 48%;
+  box-sizing: border-box;
+}
+.text-area{
+  width: 100%;
+}
+.form-container input,select{
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 12px 20px;
+  border: none;
+}
+.form-container
+input::placeholder,
+select:invalid{
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 16px;
+  font-weight: 400;
+  
+}
+.form-container input,select{
+  font-weight: 400;
+}
+select{
+  border-right: 20px solid transparent;
+}
+option{
+  color: black;
+}
+.bma-btn{
+  margin-top: 34px;
+}
+
+/* team members */
+
+.team-heading{
+  margin: 80px auto 50px auto;
+}
+.team-members{
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.1);
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  min-height: 782px;
+ 
+}
+#trainer-1{
+  background-image: url(../images/trainer1.png);
+  margin: 20px 20px 0 20px; 
+}
+#trainer-2{
+  background-image: url(../images/trainer2.png);
+  margin: 20px 20px 0 0; 
+}
+#trainer-3{
+  background-image: url(../images/trainer3.png);
+  margin: 20px 20px 0 0; 
+}
+#trainer-4{
+  background-image: url(../images/trainer4.png);
+  margin: 20px 20px 20px 20px; 
+}
+#trainer-5{
+  background-image: url(../images/trainer5.png);
+  margin: 20px 20px 20px 0; 
+}
+#trainer-6{
+  background-image: url(../images/trainer6.png);
+  margin: 20px 20px 20px 0; 
+}
+.team-member{
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 18px;
+  position: relative;
+}
+.trainer-name{
+  color: rgb(255, 255, 255);
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+.trainer{
+  color: rgba(255, 255, 255,0.5);
+  font-size: 1rem;
+  font-weight: 400;
+}
+.member-name{
+  position: absolute; 
+  top: 80%;
+  left: 5%;
+}
 
 
 
@@ -298,7 +462,8 @@ margin-top: 10px;
   }
   .banner,
   .image-container,
-  .running-container{
+  .running-container,
+  .calculator-container{
     flex-direction: column;
   }
   /* navbar styles */
@@ -335,7 +500,6 @@ margin-top: 10px;
     height: 74px;
     top: 48px;
     left: 182px;
-   
   }
   .one{
     font-size: 18px;
@@ -367,6 +531,7 @@ margin-top: 10px;
   .running-image img{
     max-width: 100%;
     height: 80%;
+    object-fit: cover;
     object-position: 66% 29%;
   } 
   .second-button{
@@ -375,4 +540,19 @@ margin-top: 10px;
    width: 100%;
   }
   
+  /* bmi calculator */
+  .bmi-heading{
+    margin: 1rem 1.25rem;
+  }
+  .calculator-chart{
+    max-width: 100%;
+  }
+  .calculator-input{
+    max-width: 100%;
+  }
+  .bma-btn{
+    font-size: 18px;
+    font-weight: 600;
+    padding: 16px 40px;
+  }
 }
