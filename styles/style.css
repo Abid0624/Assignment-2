@@ -307,7 +307,6 @@ margin-top: 10px;
   margin: 5rem 300px;
 }
 .calculator-container{
-  min-height: 200px;
   display: flex;
   justify-content: space-between;
 }
@@ -449,21 +448,63 @@ option{
   left: 5%;
 }
 
+/* class part */
+.excercise{
+  background-color: rgb(34, 34, 34);
+  border-radius: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+  padding: 20px 20px;
 
-
-
+}
+.excercise-image{
+  max-width: 50%;
+}
+.excercise-description{
+  max-width: 50%;
+}
+.excercise-image img{
+  max-width: 100%;
+  border-radius: 18px;
+  object-fit: cover;
+}
+.number{
+  color:  rgb(255, 255, 255);
+  font-size: 4rem;
+  font-weight: 800;
+  font-style: italic;
+}
+.training-name{
+  color: rgba(230, 83, 60, 1);
+  font-size: 3rem;
+  font-weight: 900;
+  font-style: italic;
+}
+.about-training{
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 14px;
+  font-weight: 400;
+  text-align: left;
+  margin-top: 20px;
+}
+#excercise-2{
+ background-color: rgba(72, 71, 71, 0.174);
+}
 
 /* responsive part */
 
 
 @media screen and (max-width:576px) {
   .container{
-    margin: 1rem 20px;
+    margin: 1.5rem 20px;
   }
   .banner,
   .image-container,
   .running-container,
-  .calculator-container{
+  .calculator-container,
+  .excercise{
     flex-direction: column;
   }
   /* navbar styles */
@@ -542,7 +583,7 @@ option{
   
   /* bmi calculator */
   .bmi-heading{
-    margin: 1rem 1.25rem;
+    margin: 1.5rem 1.25rem;
   }
   .calculator-chart{
     max-width: 100%;
@@ -550,9 +591,55 @@ option{
   .calculator-input{
     max-width: 100%;
   }
+
+  .form-field{
+    width: 47%;
+  }
+  .calculator{
+    padding: 30px 0;
+  }
+  .calculator-input{
+    margin-top: 1.5rem;
+  }
   .bma-btn{
     font-size: 18px;
     font-weight: 600;
     padding: 16px 40px;
   }
-}
+  /*  trainers part  */
+  .team-members{
+    grid-template-columns: repeat(1,1fr);
+    min-height: 1200px;
+  }
+  .team-member{
+    background-size: cover;
+    margin: 20px 20px 0 20px !important;
+    height:300px;
+    width: 90%;
+  }
+  #trainer-6{
+    margin-bottom: 20px !important;
+  }
+  .team-heading{
+    margin: 30px 20px;
+  }
+  .team-member-heading{
+    font-size: 2rem;
+  }
+  /* class part */
+  .excercise-image{
+    max-width: 100%;
+  }
+  .excercise-description{
+    max-width: 100%;
+  }
+  .ex-title{
+    font-size: 32px;
+    margin: 0 10px;
+  }
+  .number{
+    font-size: 3rem;
+  }
+  .training-name{
+    font-size: 2.5rem;
+  }
