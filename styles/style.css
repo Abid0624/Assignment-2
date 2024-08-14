@@ -492,6 +492,14 @@ option{
 #excercise-2{
  background-color: rgba(72, 71, 71, 0.174);
 }
+.cls-btn{
+  margin-top: 20px;
+}
+
+
+
+
+
 
 /* responsive part */
 
@@ -503,8 +511,7 @@ option{
   .banner,
   .image-container,
   .running-container,
-  .calculator-container,
-  .excercise{
+  .calculator-container{
     flex-direction: column;
   }
   /* navbar styles */
@@ -643,3 +650,14 @@ option{
   .training-name{
     font-size: 2.5rem;
   }
+  #exercise-1,
+  #exercise-3{
+    flex-direction: column;
+  }
+  #exercise-2{
+    flex-direction: column-reverse;
+  }
+  .cls-btn{
+    width: 100%;
+  }
+}
